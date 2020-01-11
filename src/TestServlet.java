@@ -7,7 +7,8 @@ import java.io.IOException;
 public class TestServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       // resp.sendRedirect("https://www.google.com");
+       // resp.sendRedirect("https://www.youtube.com");
+        req.getRequestDispatcher("m");
         req.getRequestDispatcher("testServlet.jsp").forward(req,resp);
     }
 
